@@ -12,9 +12,9 @@ const routes = [
     component: () => import('../components/CreatePage')
   }, 
   { 
-    path: '/edit/vM9D8GNYDuokpuDPtMQO', 
+    path: '/edit/:id', 
     name: 'edit', component: () => import('../components/EditPage') 
-  } 
+  },
 ] 
 
 const router = createRouter({ 

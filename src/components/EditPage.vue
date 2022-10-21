@@ -61,9 +61,9 @@ export default {
         onUpdateForm(event) {
             event.preventDefault()
             db.collection('subscriptions').doc(this.$route.params.id)
-            .update(this.user).then(() => {
+            .update(this.subscription).then(() => {
                 console.log("Subscription successfully updated!");
-                this.$router.push('/list')
+                this.$router.push('/')
             }).catch((error) => {
             console.log(error);
             });
